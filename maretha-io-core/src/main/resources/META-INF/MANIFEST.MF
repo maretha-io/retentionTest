@@ -1,0 +1,9 @@
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Manifest-Version: 1.0
+Bundle-Vendor: maretha.io
+Bundle-Version: 1.0.0
+Bundle-Name: maretha-io-core
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: maretha.io.maretha-io-core;singleton=true
+Nuxeo-Component: OSGI-INF/listeners-contrib.xml

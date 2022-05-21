@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<component name="maretha.io.listeners.contrib">
+
+
+  
+  <extension target="org.nuxeo.ecm.core.event.EventServiceComponent"
+               point="listener">
+    
+    <listener name="ruleAttachedListener" enabled="true"
+              postCommit="false" async="false"
+              class="maretha.io.listeners.RuleAttachedListener"
+              priority="100">
+      <event>retentionRuleAttached</event>
+    </listener>
+    
+        <listener name="docUpdatedListenerEval" enabled="true"
+              postCommit="false" async="false"
+              class="maretha.io.listeners.DocumentUpdatedListener"
+              priority="10">
+      <event>beforeDocumentModification</event>
+    </listener>
+
+  </extension>
+</component>
